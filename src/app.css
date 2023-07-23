@@ -1,0 +1,222 @@
+.mobile-app {
+  border: 4px solid #fff;
+  border-radius: 23px;
+  background-color: #bad7e9;
+  width: 400px;
+  /* height: 200px; */
+  padding: 15px 0;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+.bitcoin-wallet-header {
+  font-size: 20px;
+}
+
+/* bitcoin card */
+.bitcoin-card {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 10px 20px 3px 20px;
+}
+
+.bitcoin-img {
+  display: flex;
+  align-items: center;
+}
+
+.bitcoin-symbol {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.about-bitcoin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.bitcoin-logo-text {
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.value-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  width: 80%;
+  font-size: 25px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.dollar-value {
+  opacity: 0.6;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+}
+
+.btn-percent {
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.arrow-down {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.arrow-down-img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* time */
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 14px;
+  opacity: 0.6;
+  margin: 0 10px;
+}
+
+.period {
+  font-weight: bold;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.week,
+.selected {
+  background-color: #c3c1c1;
+  color: #fff;
+  border-radius: 12px;
+  padding: 5px 10px;
+}
+
+/* chart component */
+.chart-component {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 10px 20px;
+}
+
+.volatility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.bearish,
+.bullish {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #c3c1c1;
+}
+
+.red-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 5px;
+}
+
+.green-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 5px;
+}
+
+.chart-img {
+  width: 150px;
+  height: 100px;
+  margin-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.coin-dollar-value {
+  font-size: 12px;
+}
+
+/* trade */
+.trade {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3px 20px 10px 20px;
+}
+
+.buy-btc-img,
+.sell-btc-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.buy-btc,
+.sell-btc {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 12px;
+  width: 35%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #c3c1c1;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 0px 0px 34px 38px;
+  margin: 10px 10px 0 10px;
+}
