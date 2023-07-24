@@ -1,7 +1,8 @@
 @media (max-width: 1200px) {
   .mobile-app {
-    width: 370px;
-    margin: 0 0 40px 0;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 10% 0;
   }
 
   .amount {

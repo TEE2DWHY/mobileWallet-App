@@ -2,11 +2,11 @@
   border: 4px solid #fff;
   border-radius: 23px;
   background-color: #bad7e9;
-  width: 400px;
-  /* height: 200px; */
   padding: 15px 0;
   box-shadow: 0 0 10px #fff;
   position: relative;
+  height: fit-content;
+  width: fit-content;
 }
 
 .dropdown-popup {
