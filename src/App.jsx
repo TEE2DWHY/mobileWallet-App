@@ -1,3 +1,5 @@
+import { useState } from "react";
+// styling
 import "./styles/app.css";
 // images
 import logo from "./assets/images/logo.gif";
@@ -15,8 +17,8 @@ import {
 } from "./assets/icons/designs";
 // chart (using recharts)
 import Recharts from "./assets/icons/Recharts";
+// dropdown component
 import DropDown from "./components/DropDown";
-import { useState } from "react";
 
 function App() {
   //create state for close button
@@ -46,6 +48,12 @@ function App() {
       // revert to default styling after 2s
       element.classList.toggle("selected");
     }, [2000]);
+  };
+
+  // show period
+  const showPeriod = () => {
+    const time = document.querySelector(".time");
+    time.classList.toggle("show-time");
   };
 
   return (
@@ -84,6 +92,7 @@ function App() {
               className="arrow-down-img"
               src={arrowDown}
               alt="arrow-down-img"
+              onClick={() => showPeriod()}
             />
           </h4>
         </div>

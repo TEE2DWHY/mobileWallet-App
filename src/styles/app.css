@@ -113,6 +113,10 @@
 
 /* time */
 .time {
+  display: none;
+}
+
+.show-time {
   display: flex;
   align-items: center;
   justify-content: space-between;

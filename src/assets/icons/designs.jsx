@@ -5,6 +5,10 @@ import {
   faBell,
   faWallet,
   faArrowLeft,
+  faEdit,
+  faReceipt,
+  faArrowUpFromBracket,
+  faCircleMinus,
 } from "@fortawesome/free-solid-svg-icons";
 import { faSafari } from "@fortawesome/free-brands-svg-icons";
 
@@ -36,4 +40,26 @@ export const Safari = () => {
 
 export const ArrowLeft = () => {
   return <FontAwesomeIcon icon={faArrowLeft} cursor="pointer" />;
+};
+
+export const Edit = () => {
+  return <FontAwesomeIcon icon={faEdit} cursor="pointer" />;
+};
+
+export const Receipt = () => {
+  return <FontAwesomeIcon icon={faReceipt} cursor="pointer" />;
+};
+
+export const Share = () => {
+  return <FontAwesomeIcon icon={faArrowUpFromBracket} cursor="pointer" />;
+};
+
+export const Remove = () => {
+  return (
+    <FontAwesomeIcon
+      icon={faCircleMinus}
+      style={{ color: "red" }}
+      cursor="pointer"
+    />
+  );
 };
