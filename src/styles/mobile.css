@@ -1,6 +1,7 @@
 @media (max-width: 1200px) {
   .mobile-app {
     width: 360px;
+    margin-bottom: 80px;
   }
 
   .amount {
