@@ -47,7 +47,7 @@ const data = [
 
 const Recharts = () => {
   return (
-    <LineChart width={300} height={100} data={data}>
+    <LineChart width={280} height={100} data={data}>
       <Line type="monotone" dataKey="pv" stroke="#FFC95F" strokeWidth={4} />
     </LineChart>
   );
