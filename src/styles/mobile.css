@@ -3,4 +3,8 @@
     width: 370px;
     margin: 0 0 40px 0;
   }
+
+  .amount {
+    font-size: 18px;
+  }
 }
