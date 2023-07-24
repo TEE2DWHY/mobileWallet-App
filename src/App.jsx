@@ -1,6 +1,7 @@
 import { useState } from "react";
 // styling
 import "./styles/app.css";
+import "./styles/mobile.css";
 // images
 import logo from "./assets/images/logo.gif";
 import buyBtc from "./assets/images/dollar.png";

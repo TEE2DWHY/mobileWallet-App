@@ -1,0 +1,6 @@
+@media (max-width: 1200px) {
+  .mobile-app {
+    width: 370px;
+    margin: 0 0 40px 0;
+  }
+}
