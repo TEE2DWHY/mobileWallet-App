@@ -5,10 +5,10 @@ const DropDown = () => {
     <>
       <div className="dropdown-container">
         <div className="dropdown">
-          <p>Edit</p>
-          <p>Courier info</p>
-          <p>Share</p>
-          <p>Remove</p>
+          <p className="edit">Edit</p>
+          <p className="courier">Courier info</p>
+          <p className="share">Share</p>
+          <p className="remove">Remove</p>
         </div>
       </div>
     </>

@@ -16,8 +16,26 @@ import {
 // chart (using recharts)
 import Recharts from "./assets/icons/Recharts";
 import DropDown from "./components/DropDown";
+import { useState } from "react";
 
 function App() {
+  //create state for close button
+  const [close, setClose] = useState(true);
+  const handleClose = () => {
+    setClose(!close);
+  };
+
+  // show dropdown
+  const showDropDown = (dropdown) => {
+    const dropdownElement = document.querySelector(dropdown);
+    dropdownElement.classList.toggle("show-dropdown");
+    handleClose();
+
+    // reduce opacity of bitcoin card component on popup
+    const bitcoinCard = document.querySelector(".bitcoin-card");
+    bitcoinCard.classList.toggle("dropdown-popup");
+  };
+
   // get selected period
   const selected = (selector) => {
     // get class of selected element
@@ -28,12 +46,6 @@ function App() {
       // revert to default styling after 2s
       element.classList.toggle("selected");
     }, [2000]);
-  };
-
-  // show dropdown
-  const showDropDown = (dropdown) => {
-    const dropdownElement = document.querySelector(dropdown);
-    dropdownElement.classList.toggle("show-dropdown");
   };
 
   return (
@@ -49,7 +61,7 @@ function App() {
             className="toggle"
             onClick={() => showDropDown(".dropdown-container")}
           >
-            <Toggle />
+            {close ? <Toggle /> : <span className="close">x</span>}
           </div>
         </div>
         <DropDown />

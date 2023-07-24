@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.dropdown-popup {
+  opacity: 0.3;
+}
+
 /* header */
 .header {
   display: flex;
@@ -22,6 +26,11 @@
 
 .bitcoin-wallet-header {
   font-size: 20px;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 18px;
 }
 
 /* bitcoin card */
