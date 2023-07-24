@@ -6,6 +6,7 @@
   /* height: 200px; */
   padding: 15px 0;
   box-shadow: 0 0 10px #fff;
+  position: relative;
 }
 
 /* header */
@@ -164,14 +165,6 @@
   border-radius: 50%;
   background-color: green;
   margin-right: 5px;
-}
-
-.chart-img {
-  width: 150px;
-  height: 100px;
-  margin-top: 15px;
-  display: block;
-  margin: auto;
 }
 
 .coin-dollar-value {

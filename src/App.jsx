@@ -1,4 +1,4 @@
-import "./app.css";
+import "./styles/app.css";
 // images
 import logo from "./assets/images/logo.gif";
 import buyBtc from "./assets/images/dollar.png";
@@ -15,8 +15,10 @@ import {
 } from "./assets/icons/designs";
 // chart (using recharts)
 import Recharts from "./assets/icons/Recharts";
+import DropDown from "./components/DropDown";
 
 function App() {
+  // get selected period
   const selected = (selector) => {
     // get class of selected element
     const element = document.querySelector(selector);
@@ -28,6 +30,12 @@ function App() {
     }, [2000]);
   };
 
+  // show dropdown
+  const showDropDown = (dropdown) => {
+    const dropdownElement = document.querySelector(dropdown);
+    dropdownElement.classList.toggle("show-dropdown");
+  };
+
   return (
     <>
       <div className="mobile-app">
@@ -37,10 +45,14 @@ function App() {
             <ArrowLeft />
           </div>
           <div className="bitcoin-wallet-header">Bitcoin Wallet</div>
-          <div className="toggle">
+          <div
+            className="toggle"
+            onClick={() => showDropDown(".dropdown-container")}
+          >
             <Toggle />
           </div>
         </div>
+        <DropDown />
         {/* bitcoin-card-component */}
         <div className="bitcoin-card">
           <div className="about-bitcoin">
@@ -91,7 +103,6 @@ function App() {
             </div>
           </div>
           <Recharts />
-          {/* <img className="chart-img" src={chart} alt="chart-img" /> */}
           <p className="coin-dollar-value">1BTC = $5,483</p>
         </div>
         {/* trade */}

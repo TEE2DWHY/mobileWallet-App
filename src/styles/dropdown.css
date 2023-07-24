@@ -1,0 +1,29 @@
+.dropdown-container {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  z-index: 4;
+  display: none;
+}
+
+.dropdown {
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+  width: 200px;
+  height: 200px;
+  padding: 0 20px;
+}
+
+.dropdown p {
+  border-bottom: 2px solid rgb(172, 168, 168);
+  margin-bottom: 2px;
+}
+
+.show-dropdown {
+  display: block;
+}
