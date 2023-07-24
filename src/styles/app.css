@@ -10,7 +10,7 @@
 }
 
 .dropdown-popup {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 /* header */
@@ -36,7 +36,6 @@
 /* bitcoin card */
 .bitcoin-card {
   background-color: #fff;
-  margin-top: 10px;
   border-radius: 12px;
   padding: 10px 20px;
   margin: 10px 20px 3px 20px;
